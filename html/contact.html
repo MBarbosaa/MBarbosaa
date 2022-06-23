@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Solar | Contacto</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../images/logo.png" alt="Logo de mi pagina"></a>
-        <nav>
-            <ul>
+    <header>        
+        <nav class="header_nav">
+            <div class="header_nav_logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="Logo de mi pagina"></a>
+            </div>            
+            <ul class="header_nav_ul">
                 <li><a class="navElement" href="../index.html">Home</a></li>
                 <li><a class="navElement" href="./properties.html">Propiedades</a></li>
                 <li><a class="navElement" href="./services.html">Servicios</a></li>                
@@ -20,9 +26,25 @@
                 <li><a class="navElement" href="#">Contacto</a></li>
             </ul>
     </header>
-    <main>
-        <section>
-            <h1>¡Contactanos!</h1>
+    <main class="contact_main">
+        <section class="contact_section" id=""> 
+            <h2>Ubicacion</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.913553530997!2d-58.523930184476875!3d-34.53041808047854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0cfbb54b63f%3A0x510e4dd002f2487d!2sSolar%20Propiedades!5e0!3m2!1ses!2sar!4v1654647527625!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact_section" id="contact_data">
+            <h2>Datos de contacto</h2>
+            <ul>
+                <li>Whatsapp: +54 9 1198754123</li>
+                <li>Teléfonos: 49874561</li>
+                <li>Mail: solarpropieades@gmail.com</li>
+            </ul>
+        </section>
+
+        <section class="contact_section" id="contact_form">
+            <h2>¡Contactanos!</h2>
             <p>A continuación dejanos tu consulta y responderemos a la brevedad</p>
             <form action="">
                 <input type="text" name="name" placeholder="Nombre">
