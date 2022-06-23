@@ -1,7 +1,22 @@
+/* General CSS */
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+h1 {
+    padding-top: 10px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #3160da;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 /*      Header         */
@@ -153,17 +168,6 @@ header {
 
 /* Services page */
 
-.h1_services {
-    padding-top: 10px;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: 800;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #3160da;
-}
-
 .services_div {
     width: 60%;
     margin: 0 auto;
@@ -177,6 +181,24 @@ header {
     background-color: rgb(245, 245, 245);
 }
 
+
+/* Properties Page */
+
+.properties_list {
+    background-color: rgb(245, 245, 245);
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.properties_list ol {
+    list-style-type: none;
+}
+.properties_list ol li button{
+    background-color: #3160da;
+    color: white;
+    border: #3160da;
+    
+}
 /* @media screen and (max-width: 768px){
     header {
 
