@@ -11,8 +11,8 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 4fr 1fr; 
-    grid-auto-flow: dense;    
+    grid-template-rows: 0fr 1fr 0fr;
+    grid-auto-flow: dense;
     gap: 0px 0px;
     grid-template-areas:
         "header"
@@ -37,11 +37,6 @@ main {
     grid-area: main;
 }
 
-footer {
-    max-height: 20px;
-    grid-area: footer;
-}
-
 /*      Header         */
 
 
@@ -56,39 +51,31 @@ header {
     top: 0;
     background-color: #0b37a2;
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.5);
-    height: 100px;
+    height: 104px;
 }
+
+
 
 .header_nav {
     margin: 0 auto;
-    max-width: 70%;
-    height: 100px;
-    min-height: 100px;
-}
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 
-.header_nav_logo {
-    display: inline;
-    height: inherit;
-}
 
-.header_nav_logo a {
-    height: inherit;
-    min-height: inherit;
 }
 
 .header_nav_logo a img {
-    display: inline;
-    height: inherit;
-    min-height: inherit;
+    height: 100px;
 
 }
 
 .header_nav_ul {
-    height: inherit;
-    float: right;
     list-style-type: none;
     display: flex;
-    align-items: center;
+    margin-left: auto;
+
 
 }
 
@@ -115,6 +102,30 @@ header {
     width: 100%;
 }
 
+/* Footer */
+footer {
+    height: 104px;
+    background-color: gray;
+
+
+}
+
+footer div {
+    grid-area: footer;
+    margin: 0 auto;
+    width: 70%;
+    height: 104px;
+    display: flex;
+    vertical-align: center;
+}
+
+footer div a img {
+    width: 20%;
+}
+
+.footer_flex {
+    display: flex;
+}
 
 /* Contact page */
 
@@ -209,18 +220,69 @@ header {
 /* Properties Page */
 
 .properties_list {
+
     background-color: rgb(245, 245, 245);
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .properties_list ol {
+    display: flex;
     list-style-type: none;
+}
+
+.properties_list ol li img {
+    width: 20%;
 }
 
 .properties_list ol li button {
     background-color: #3160da;
     color: white;
     border: #3160da;
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1076px) {
+    .header_nav {
+        width: 90%;
+    }
+
+    footer div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .grid {
+        grid-template-rows: 0fr 1fr 0fr;
+    }
+
+    .properties_list {
+        width: 100%;
+
+    }
+
+
+    header {
+        position: relative;
+        height: 325px;
+    }
+
+    .header_nav {
+        flex-direction: column;
+    }
+
+    .header_nav ul {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .header_nav_ul li {
+        margin: 8px;
+        text-align: center;
+
+    }
 
 }
