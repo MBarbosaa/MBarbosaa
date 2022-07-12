@@ -80,12 +80,13 @@ header {
 }
 
 .header_nav_ul li {
+    transition: transform 0.35s;
     margin: 16px;
 
 }
 
 .header_nav_ul li:hover {
-    border: solid 1px white;
+    transform: scale(1.07);
 }
 
 .navElement {
@@ -93,7 +94,6 @@ header {
     font-weight: 500;
     font-size: 20px;
     color: white;
-
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -105,7 +105,7 @@ header {
 /* Footer */
 footer {
     height: 104px;
-    background-color: gray;
+    background-image: linear-gradient(to bottom, rgb(153, 152, 152), rgb(85, 85, 85));
 
 
 }
