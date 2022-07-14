@@ -22,15 +22,15 @@
 }
 
 h1 {
-    padding-top: 10px;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: 800;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #3160da;
-    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    padding-top: 10px !important;                                                    
+    width: 60% !important;                 
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+    text-transform: uppercase!important;
+    color: #3160da !important;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
 }
 
 main {
@@ -40,12 +40,9 @@ main {
 /*      Header         */
 
 
-.indexTitle {
-    width: fit-content;
-    background-color: antiquewhite;
-}
 
-header {
+
+header  {
     grid-area: header;
     position: sticky;
     top: 0;
@@ -98,15 +95,33 @@ header {
     text-transform: uppercase;
 }
 
+/*                  Index Page               */
+.indexTitle {
+    width: fit-content;
+    background-color: antiquewhite;
+}
+
+.search_bar {
+    margin: 0 auto;
+    width: fit-content;
+    
+}
+
+
 .backgroundImage img {
     width: 100%;
 }
 
-/* Footer */
+.btn-primary{
+    margin: 0 auto;
+}
+
+
+
+/*                   Footer                  */
 footer {
     height: 104px;
-    background-image: linear-gradient(to bottom, rgb(153, 152, 152), rgb(85, 85, 85));
-
+    background-color: rgb(138, 138, 138);
 
 }
 
@@ -225,6 +240,9 @@ footer div a img {
     width: 70%;
     margin: 0 auto;
 }
+.btn-group{
+    width: 33.1%;
+}
 
 .properties_list ol {
     display: flex;
@@ -255,6 +273,9 @@ footer div a img {
 }
 
 @media screen and (max-width: 810px) {
+    .btn-group{
+        width: 100%;
+    }
     .grid {
         grid-template-rows: 0fr 1fr 0fr;
     }

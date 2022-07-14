@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Solar | Propiedades</title>
 </head>
 
 <body class="grid">
-    <header>        
+    <header>
         <nav class="header_nav">
             <div class="header_nav_logo">
                 <a href="../index.html"><img src="../images/logo.png" alt="Logo de mi pagina"></a>
-            </div>            
+            </div>
             <ul class="header_nav_ul">
                 <li><a class="navElement" href="../index.html">Home</a></li>
                 <li><a class="navElement" href="#">Propiedades</a></li>
@@ -27,9 +29,56 @@
             </ul>
     </header>
     <main>
+
         <!-- Placeholder, la idea es hacer una app completa con API pero esta fuera del scope del curso -->
         <h1>Propiedades disponibles</h1>
         <section class="properties_list">
+            <!-- Example single danger button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Tipo de propiedad
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Tipo de operación
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Zona
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
             <h2>Propiedades en venta</h2>
             <ol>
                 <li>
@@ -43,6 +92,7 @@
         </section>
         <section class="properties_list">
             <h2>Propiedades en alquiler</h2>
+
             <ol>
                 <li>
                     <h3>Deposito de 130m² en Devoto</h3>
@@ -77,9 +127,12 @@
                 <a href=""><img src="../images/youtube-brands.svg" alt="youtube"></a>
                 <a href=""><img src="../images/instagram-brands.svg" alt="instagram"></a>
                 <a href=""><img src="../images/facebook-brands.svg" alt="facebook"></a>
-            </section>        
+            </section>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
