@@ -138,7 +138,7 @@ header {
 .btn-animation {
     width: 25%;
     margin-right: 0%;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
 }
 
@@ -296,12 +296,16 @@ footer div a img {
     width: 20%;
 }
 
-.properties_list ol li button {
+.see_more_property_button {
+    width: 85px;
     background-color: #3160da;
     color: white;
     border: #3160da;
-
+    animation: bounce 1s infinite alternate;
 }
+@keyframes bounce {
+    to { transform: scale(1.2); }
+  }
 
 /* MEDIA QUERIES */
 
