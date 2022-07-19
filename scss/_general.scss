@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+h1 {
+    padding-top: 10px !important;                                                    
+    width: 60% !important;                 
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+    text-transform: uppercase!important;
+    color: $principal_color !important;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
+}
