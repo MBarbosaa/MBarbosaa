@@ -4,14 +4,126 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 
 }
+
 h1 {
-    padding-top: 10px !important;                                                    
-    width: 60% !important;                 
+    padding-top: 10px !important;
+    width: 60% !important;
     text-align: center !important;
     margin: 0 auto !important;
     font-weight: 800 !important;
     font-size: 30px !important;
-    text-transform: uppercase!important;
-    color: $principal_color !important;
+    text-transform: uppercase !important;
+    color: $principal_color  !important;
     text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 0fr;
+    grid-auto-flow: dense;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+}
+
+h1 {
+    padding-top: 10px !important;
+    width: 60% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+    text-transform: uppercase !important;
+    color: $secondary_color;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
+}
+
+main {
+    grid-area: main;
+}
+
+header {
+    grid-area: header;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background-color: $principal_color;
+    box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.5);
+    height: 104px;
+}
+
+.header_nav {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    a {
+        img {
+            height: 100px;
+        }
+    }
+
+}
+
+.header_nav_ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+
+    li {
+        transition: transform 0.35s;
+        margin: 16px;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+
+
+}
+
+.navElement {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*                   Footer                  */
+
+footer {
+    height: 104px;
+    background-color: rgb(138, 138, 138);
+
+    div {
+        grid-area: footer;
+        margin: 0 auto;
+        width: 70%;
+        height: 104px;
+        display: flex;
+        vertical-align: center;
+        justify-content: center;
+
+        a img {
+            width: 20%;
+        }
+    }
+
+}
+
+h4 {
+    font-size: 16px !important;
+}
+
+div .footer_flex {
+    display: flex;
 }
