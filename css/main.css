@@ -11,5 +11,123 @@ h1 {
   font-weight: 800 !important;
   font-size: 30px !important;
   text-transform: uppercase !important;
-  color: #3160da !important;
+  color: #0b37a2 !important;
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important; }
+
+.grid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0fr 1fr 0fr;
+  grid-auto-flow: dense;
+  gap: 0px 0px;
+  grid-template-areas: "header" "main" "footer"; }
+
+h1 {
+  padding-top: 10px !important;
+  width: 60% !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  font-weight: 800 !important;
+  font-size: 30px !important;
+  text-transform: uppercase !important;
+  color: #3160da;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important; }
+
+main {
+  grid-area: main; }
+
+header {
+  grid-area: header;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  background-color: #0b37a2;
+  box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.5);
+  height: 104px; }
+
+.header_nav {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+  .header_nav a img {
+    height: 100px; }
+
+.header_nav_ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto; }
+  .header_nav_ul li {
+    transition: transform 0.35s;
+    margin: 16px; }
+    .header_nav_ul li:hover {
+      transform: scale(1.07); }
+
+.navElement {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/*                   Footer                  */
+footer {
+  height: 104px;
+  background-color: #8a8a8a; }
+  footer div {
+    grid-area: footer;
+    margin: 0 auto;
+    width: 70%;
+    height: 104px;
+    display: flex;
+    vertical-align: center;
+    justify-content: center; }
+    footer div a img {
+      width: 20%; }
+
+h4 {
+  font-size: 16px !important; }
+
+div .footer_flex {
+  display: flex; }
+
+.backgroundImage {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .backgroundImage img {
+    width: 100%; }
+
+.search_bar {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  box-shadow: 0px 0px 25px 25px rgba(0, 0, 0, 0.5); }
+  .search_bar form {
+    margin: 0 auto;
+    width: fit-content; }
+  .search_bar h1 {
+    color: white;
+    width: 80%; }
+
+.form-select {
+  width: 600px; }
+
+.btn-animation {
+  width: 25%;
+  margin-right: 0%;
+  animation-duration: 2s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; }
+  to {
+    margin-left: 0%;
+    width: 25%; } }
