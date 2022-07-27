@@ -5,18 +5,6 @@ body {
 
 }
 
-h1 {
-    padding-top: 10px !important;
-    width: 60% !important;
-    text-align: center !important;
-    margin: 0 auto !important;
-    font-weight: 800 !important;
-    font-size: 30px !important;
-    text-transform: uppercase !important;
-    color: $principal_color  !important;
-    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
-}
-
 .grid {
     display: grid;
     margin: 0 auto;
@@ -30,17 +18,25 @@ h1 {
         "footer";
 
 }
-
-h1 {
+.hs{
     padding-top: 10px !important;
-    width: 60% !important;
     text-align: center !important;
     margin: 0 auto !important;
+
+}
+
+h1 {
+    @extend.hs;
+    width: 60% !important;
     font-weight: 800 !important;
     font-size: 30px !important;
     text-transform: uppercase !important;
-    color: $secondary_color;
+    color: map-get($colores, secondary_color);
     text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
+}
+h4{
+    @extend.hs;
+
 }
 
 main {
@@ -52,7 +48,7 @@ header {
     z-index: 999;
     position: sticky;
     top: 0;
-    background-color: $principal_color;
+    background-color: map-get($colores, principal_color);
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.5);
     height: 104px;
 }
@@ -118,6 +114,20 @@ footer {
         }
     }
 
+}
+
+$redes: (
+    youtube: red,
+    facebook: blue,
+    instagram: white,
+    whatsapp: green,
+);
+
+@each $red,
+$color in $redes {
+    .btn-#{$red} {
+        background-color: $color;
+    }
 }
 
 h4 {

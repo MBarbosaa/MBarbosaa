@@ -10,9 +10,8 @@
     }
 }
 
-.search_bar {
-    width: 800px;
-    height: 300px;
+.search_bar {    
+    @include sizes(800px, 300px);
     position: absolute;
     box-shadow: 0px 0px 25px 25px rgba(0, 0, 0 , 0.5);
 

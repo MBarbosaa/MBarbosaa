@@ -1,2 +1,11 @@
-$principal_color: #0b37a2;
-$secondary_color: #3160da;
+// $principal_color: #0b37a2;
+// $secondary_color: #3160da;
+$colores: (
+    principal_color: #0b37a2,
+    secondary_color: #3160da
+);
+
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
