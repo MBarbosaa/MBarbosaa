@@ -1,0 +1,30 @@
+.properties_list {
+
+    background-color: rgb(245, 245, 245);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btn-group {
+    width: 33.1%;
+}
+
+.properties_list ol {
+    display: flex;
+    list-style-type: none;
+}
+
+.properties_list ol li img {
+    width: 20%;
+}
+
+.see_more_property_button {
+    width: 85px;
+    background-color: #3160da;
+    color: white;
+    border: #3160da;
+    animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+    to { transform: scale(1.2); }
+  }

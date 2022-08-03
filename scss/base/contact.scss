@@ -1,0 +1,35 @@
+.contact_main {
+    margin-top: 5px;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.contact_section {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+#contact_map {
+    display: block;
+    width: fit-content;
+}
+
+.contact_section h2 {
+    color: #3160da;
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+#contact_form form input[type=submit] {
+    background-color: #3160da;
+    color: white;
+}
+
+#contact_data ul li {
+    list-style-type: none;
+
+
+}
